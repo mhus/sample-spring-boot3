@@ -22,3 +22,7 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 docker run hello-world
 ```
+
+## Sources
+
+* https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
