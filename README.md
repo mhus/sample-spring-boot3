@@ -1,6 +1,6 @@
 
 
-```sh
+```shell
 mvn spring-boot:run
 mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springboot3sample
 docker run --rm -it -p 8080:8080 --name springboot3sample -t springboot3sample
@@ -9,9 +9,15 @@ mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springboot3sampl
 docker run --rm -it -p 8080:8080 --name springboot3samplen -t springboot3samplen
 ```
 
+```shell
+mvn -Pnative native:compile
+./target/SampleSpringBoot3Project
+```
+
+
 ## New hetzner server
 
-```sh
+```shell
 apt update
 apt install -y git maven openjdk-19-jdk ca-certificates curl gnupg lsb-release
 mkdir -p /etc/apt/keyrings
