@@ -38,6 +38,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--
 				<configuration>
 					<image>
 						<builder>dashaun/builder:tiny</builder>
@@ -46,6 +47,7 @@
 						</env>
 					</image>
 				</configuration>
+				-->
 			</plugin>
 			<plugin>
 				<groupId>org.graalvm.buildtools</groupId>

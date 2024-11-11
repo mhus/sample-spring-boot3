@@ -9,18 +9,9 @@ mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springboot3sampl
 docker run --rm -it -p 8080:8080 --name springboot3samplen -t springboot3samplen
 ```
 
-## New hetzner server
-
-```sh
-apt update
-apt install -y git maven openjdk-19-jdk ca-certificates curl gnupg lsb-release
-mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null 
-apt-get update
-apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
-docker run hello-world
+```shell
+mvn -Pnative clean native:compile
+./target/SampleSpringBoot3Project
 ```
 
 ## Sources

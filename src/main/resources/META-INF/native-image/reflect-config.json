@@ -1,0 +1,9 @@
+[
+  {
+    "name": "de.mhus.test.SampleSpringBoot3Project.TryAutowireConfigurable",
+    "allDeclaredMethods": true,
+    "allDeclaredConstructors": true,
+    "unsafeAllocated": true,
+    "allDeclaredFields": true
+  }
+]
