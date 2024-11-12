@@ -11,7 +11,7 @@ public class TryAutowireConfigurable {
 
     @Autowired
     public void setTryAutowireOtherBean(TryAutowireOtherBean tryAutowireOtherBean) {
-        System.out.println("TryAutowireConfigurable: setTryAutowireOtherBean");
+        System.out.println("--- TryAutowireConfigurable: setTryAutowireOtherBean");
         this.tryAutowireOtherBean = tryAutowireOtherBean;
     }
 

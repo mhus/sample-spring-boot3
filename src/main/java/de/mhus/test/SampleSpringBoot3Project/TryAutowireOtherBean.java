@@ -8,6 +8,6 @@ public class TryAutowireOtherBean {
 
     @PostConstruct
     public void init() {
-        System.out.println("TryAutowireOtherBean: PostConstruct");
+        System.out.println("--- TryAutowireOtherBean: PostConstruct");
     }
 }
