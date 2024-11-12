@@ -6,8 +6,14 @@ import org.springframework.beans.factory.annotation.Configurable;
 @Configurable
 public class TryAutowireConfigurable {
 
-    @Autowired
+//    @Autowired
     private TryAutowireOtherBean tryAutowireOtherBean;
+
+    @Autowired
+    public void setTryAutowireOtherBean(TryAutowireOtherBean tryAutowireOtherBean) {
+        System.out.println("TryAutowireConfigurable: setTryAutowireOtherBean");
+        this.tryAutowireOtherBean = tryAutowireOtherBean;
+    }
 
     public boolean isAutowired() {
         return tryAutowireOtherBean != null;
